@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — BoxMemory</title>
+    <meta name="description" content="BoxMemory Privacy Policy. Learn how we handle your data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#f5f0ea">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-TileColor" content="#f5f0ea">
+    <style>
+        .privacy-policy-page {
+            padding: 140px 0 80px;
+            min-height: 100vh;
+        }
+
+        .privacy-policy-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .privacy-policy-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+
+        .privacy-policy-back:hover {
+            color: var(--accent-light);
+        }
+
+        .privacy-policy-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+
+        .privacy-policy-updated {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 48px;
+        }
+
+        .privacy-policy-content h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .privacy-policy-content p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .privacy-policy-content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 24px;
+        }
+
+        .privacy-policy-content ul li {
+            position: relative;
+            padding-left: 24px;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .privacy-policy-content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .privacy-policy-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .privacy-policy-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.95rem;
+        }
+
+        .privacy-policy-content th {
+            text-align: left;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-weight: 600;
+            border: 1px solid var(--border);
+        }
+
+        .privacy-policy-content td {
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .privacy-policy-contact {
+            margin-top: 48px;
+            padding: 32px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+        }
+
+        .privacy-policy-contact p {
+            margin-bottom: 8px;
+        }
+
+        .privacy-policy-contact a {
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .privacy-policy-contact a:hover {
+            color: var(--accent-light);
+        }
+
+        @media (max-width: 768px) {
+            .privacy-policy-page {
+                padding: 120px 0 60px;
+            }
+
+            .privacy-policy-content table {
+                font-size: 0.85rem;
+            }
+
+            .privacy-policy-content th,
+            .privacy-policy-content td {
+                padding: 10px 12px;
+            }
+
+            .privacy-policy-contact {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (same as main page) -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo_pixel.png" alt="BoxMemory" class="nav-logo-img">
+                <span class="nav-logo-text">BoxMemory</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#privacy">Privacy</a>
+                <a href="index.html#faq">FAQ</a>
+                <a href="index.html" class="nav-link-privacy">Back to Home</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="privacy-policy-page">
+        <div class="privacy-policy-container">
+            <a href="index.html" class="privacy-policy-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to BoxMemory
+            </a>
+
+            <h1 class="privacy-policy-title">Privacy Policy</h1>
+            <p class="privacy-policy-updated">Last updated: June 5, 2026</p>
+
+            <div class="privacy-policy-content">
+                <p>BoxMemory ("we", "our", "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application.</p>
+
+                <h2>1. Overview</h2>
+                <p>We do <strong>not</strong> collect, store, or transmit any personal data. BoxMemory is an <strong>offline-first</strong> application. All data you create within the app — including box names, location tags, notes, and photos — is stored <strong>exclusively on your personal device</strong>. No data is ever sent to our servers or any third-party service.</p>
+
+                <h2>2. Permissions &amp; Device Access</h2>
+                <p>The app requests the following permissions, all of which are used solely for core functionality:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Camera</td>
+                            <td>Photograph the exterior of your boxes and their contents</td>
+                        </tr>
+                        <tr>
+                            <td>Photo Library</td>
+                            <td>Attach existing photos from your device to boxes</td>
+                        </tr>
+                        <tr>
+                            <td>Photo Library Add</td>
+                            <td>Save photos taken within the app</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>You may revoke any of these permissions in your device settings at any time.</p>
+
+                <h2>3. Data Storage</h2>
+                <ul>
+                    <li>Box data (names, locations, notes, timestamps) is stored locally using AsyncStorage on your device.</li>
+                    <li>Photos are stored in the app's private document directory on your device.</li>
+                    <li>Custom location tags are stored locally on your device.</li>
+                    <li>All data remains on your device and is <strong>never uploaded</strong> anywhere.</li>
+                </ul>
+
+                <h2>4. Data Backup &amp; Export</h2>
+                <p>The app includes a built-in backup feature that:</p>
+                <ul>
+                    <li>Compresses your box data and photos into a ZIP file.</li>
+                    <li>Allows you to <strong>optionally</strong> share that file using your device's native share sheet (Files, iCloud, email, or any app that accepts files).</li>
+                </ul>
+                <p>This is a <strong>user-initiated action</strong> — we do not automatically back up your data. Any data shared to cloud services is done so directly by you through your device's system share sheet, and is subject to those services' respective privacy policies.</p>
+                <p>The app also includes an <strong>import &amp; restore</strong> feature that reads a previously exported ZIP file from your device and reconstructs your box data and photos locally. This process occurs entirely on your device — no data is transmitted to external servers.</p>
+
+                <h2>5. Freemium Model</h2>
+                <p>BoxMemory offers a free tier with up to 3 boxes. A one-time purchase (Pro upgrade) unlocks unlimited boxes, backup & export, and removes ads. No subscriptions or recurring charges.</p>
+                <p>If the Pro upgrade involves in-app purchases, those transactions are processed by the respective app store (Apple App Store or Google Play Store) and are subject to their terms and privacy policies.</p>
+
+                <h2>6. Third-Party Services</h2>
+                <p>BoxMemory does not use any third-party analytics, advertising, or tracking services.</p>
+                <p>The backup feature uses your device's native share sheet to let you save or send your backup file to cloud storage services (such as Files, iCloud, email, Google Drive, or Dropbox) of your choice. These integrations are controlled entirely by you, and we do not access, store, or transmit your cloud credentials.</p>
+
+                <h2>7. Data Deletion</h2>
+                <ul>
+                    <li><strong>Individual boxes:</strong> Delete specific boxes from within the app.</li>
+                    <li><strong>All data:</strong> Uninstalling the app removes all stored data from your device.</li>
+                    <li><strong>Photos:</strong> Photos taken within the app are stored in the app's private directory and are removed upon uninstallation.</li>
+                </ul>
+
+                <h2>8. Children's Privacy</h2>
+                <p>BoxMemory is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+                <h2>9. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website and updating the "Last updated" date.</p>
+
+                <h2>10. Contact Us</h2>
+                <div class="privacy-policy-contact">
+                    <p>If you have any questions, please contact us at:</p>
+                    <p><strong>Email:</strong> <a href="mailto:support@boxmemory.uk">support@boxmemory.uk</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo_pixel.png" alt="BoxMemory" class="nav-logo-img">
+                    <span class="nav-logo-text">BoxMemory</span>
+                    <span class="nav-logo-text">Never forget what's in a box again.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="index.html#privacy">Privacy</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BoxMemory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
