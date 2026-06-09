@@ -2,12 +2,26 @@
 const themeToggle = document.querySelector('.theme-toggle');
 const THEME_KEY = 'boxmemory-theme';
 
+const SCREENSHOTS = {
+    light: 'assets/main_menu_screenshot.png',
+    dark:  'assets/main_menu_screenshot_dark.png',
+};
+
+function updateScreenshot(theme) {
+    const img = document.getElementById('phone-screenshot');
+    if (img) img.src = SCREENSHOTS[theme] ?? SCREENSHOTS.light;
+}
+
 // Restore saved theme
 const savedTheme = localStorage.getItem(THEME_KEY);
 if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
+    updateScreenshot(savedTheme);
 } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
     document.documentElement.setAttribute('data-theme', 'light');
+    updateScreenshot('light');
+} else {
+    updateScreenshot('dark');
 }
 
 themeToggle?.addEventListener('click', () => {
@@ -15,6 +29,7 @@ themeToggle?.addEventListener('click', () => {
     const next = current === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem(THEME_KEY, next);
+    updateScreenshot(next);
 });
 
 // ─── Mobile Nav Toggle ───
