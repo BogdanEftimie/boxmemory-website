@@ -197,16 +197,19 @@
             </a>
 
             <h1 class="privacy-policy-title">Privacy Policy</h1>
-            <p class="privacy-policy-updated">Last updated: June 5, 2026</p>
+            <p class="privacy-policy-updated">Last updated: June 9, 2026</p>
 
             <div class="privacy-policy-content">
-                <p>BoxMemory ("we", "our", "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use our mobile application.</p>
+                <p>BoxMemory ("we", "our", "the app") is committed to protecting your privacy. This Privacy Policy explains how information is handled when you use BoxMemory.</p>
 
                 <h2>1. Overview</h2>
-                <p>We do <strong>not</strong> collect, store, or transmit any personal data. BoxMemory is an <strong>offline-first</strong> application. All data you create within the app — including box names, location tags, notes, and photos — is stored <strong>exclusively on your personal device</strong>. No data is ever sent to our servers or any third-party service.</p>
+                <p>BoxMemory is an offline-first application.</p>
+                <p><strong>We do not collect, store, process, or transmit any user content.</strong></p> 
+                <p>All information you create within the app including box names, location tags, notes, and photos is stored locally on your device. Nothing is uploaded to our servers because we do not operate any servers that receive or store user data.</p>
+
 
                 <h2>2. Permissions &amp; Device Access</h2>
-                <p>The app requests the following permissions, all of which are used solely for core functionality:</p>
+                <p>BoxMemory requests the following permissions solely to provide core functionality:</p>
                 <table>
                     <thead>
                         <tr>
@@ -221,7 +224,7 @@
                         </tr>
                         <tr>
                             <td>Photo Library</td>
-                            <td>Attach existing photos from your device to boxes</td>
+                            <td>Select existing photos from your device</td>
                         </tr>
                         <tr>
                             <td>Photo Library Add</td>
@@ -229,49 +232,69 @@
                         </tr>
                     </tbody>
                 </table>
-                <p>You may revoke any of these permissions in your device settings at any time.</p>
+                <p>You may revoke these permissions at any time in your device settings.</p>
 
                 <h2>3. Data Storage</h2>
+                <p>All BoxMemory data is stored locally on your device.</p>
+                <p>This includes:</p>
                 <ul>
-                    <li>Box data (names, locations, notes, timestamps) is stored locally using AsyncStorage on your device.</li>
-                    <li>Photos are stored in the app's private document directory on your device.</li>
-                    <li>Custom location tags are stored locally on your device.</li>
-                    <li>All data remains on your device and is <strong>never uploaded</strong> anywhere.</li>
+                    <li>Box data</li>
+                    <li>Location tags</li>
+                    <li>Notes</li>
+                    <li>Photos associated with boxes</li>
                 </ul>
+                <p>Photos are stored within the app's private directory on your device.</p>
+                <p>We do not have access to this data and cannot view, modify, or retrieve it.</p>
 
                 <h2>4. Data Backup &amp; Export</h2>
-                <p>The app includes a built-in backup feature that:</p>
+                <p>BoxMemory includes an optional backup feature that creates a ZIP archive containing your box data and associated photos.</p>
+                <p>You may choose to export or share this file using your device’s native share sheet, including services such as Files, iCloud Drive, email, Google Drive, Dropbox, or other compatible apps.</p>
+                <p>Backup creation and sharing are fully controlled by you.</p>
+                <p>BoxMemory does not automatically back up data and does not receive any copies of exported files.</p>
+                <p>Any data you choose to store with third-party services is subject to those services' own privacy policies.</p>
+                <p>BoxMemory also includes an import and restore feature that reads previously exported backup files and reconstructs your data locally on your device. This process occurs entirely on-device and does not involve any external servers.</p>
+
+
+               
+                <h2>5. Pricing</h2>
+                <p>BoxMemory offers a free tier that supports up to 3 boxes.</p>
+                <p>A one-time Pro upgrade unlocks additional features including unlimited boxes, backup & export, import & restore, and removal of ads. No subscriptions or recurring charges.</p>
+                <p>During testing, Pro features may be available to testers at no cost.</p>
+                <p>If in-app purchases are available, they will be processed by the Apple App Store or Google Play Store and will be subject to their respective terms and privacy policies.</p>
+
+                <h2>6. Data Security</h2>
+                <p>Because all BoxMemory data is stored locally on your device, the security of your information depends on your device's security.</p>
+
+                <h2>7. Third-Party Services</h2>
+                <p>BoxMemory does not use:</p>
                 <ul>
-                    <li>Compresses your box data and photos into a ZIP file.</li>
-                    <li>Allows you to <strong>optionally</strong> share that file using your device's native share sheet (Files, iCloud, email, or any app that accepts files).</li>
+                    <li>Analytics services</li>
+                    <li>Advertising networks</li>
+                    <li>Tracking technologies</li>
+                    <li>User accounts</li>
+                    <li>Cloud synchronization services</li>
                 </ul>
-                <p>This is a <strong>user-initiated action</strong> — we do not automatically back up your data. Any data shared to cloud services is done so directly by you through your device's system share sheet, and is subject to those services' respective privacy policies.</p>
-                <p>The app also includes an <strong>import &amp; restore</strong> feature that reads a previously exported ZIP file from your device and reconstructs your box data and photos locally. This process occurs entirely on your device — no data is transmitted to external servers.</p>
+                <p>The app does not transmit user content to third parties.</p>
+                <p>If you choose to export and share backup files using external services, those services operate independently of BoxMemory and are governed by their own privacy policies.</p>
 
-                <h2>5. Freemium Model</h2>
-                <p>BoxMemory offers a free tier with up to 3 boxes. A one-time purchase (Pro upgrade) unlocks unlimited boxes, backup & export, and removes ads. No subscriptions or recurring charges.</p>
-                <p>If the Pro upgrade involves in-app purchases, those transactions are processed by the respective app store (Apple App Store or Google Play Store) and are subject to their terms and privacy policies.</p>
 
-                <h2>6. Third-Party Services</h2>
-                <p>BoxMemory does not use any third-party analytics, advertising, or tracking services.</p>
-                <p>The backup feature uses your device's native share sheet to let you save or send your backup file to cloud storage services (such as Files, iCloud, email, Google Drive, or Dropbox) of your choice. These integrations are controlled entirely by you, and we do not access, store, or transmit your cloud credentials.</p>
+                <h2>8. Data Deletion</h2>
+                <p>You can delete individual boxes, or all of them, and their associated data at any time within the app.</p>
+                <p>If you uninstall BoxMemory, all locally stored app data is removed from your device.</p>
+                <p>Any backup files you previously exported remain in the locations where you saved them and must be deleted separately if desired.</p>
 
-                <h2>7. Data Deletion</h2>
-                <ul>
-                    <li><strong>Individual boxes:</strong> Delete specific boxes from within the app.</li>
-                    <li><strong>All data:</strong> Uninstalling the app removes all stored data from your device.</li>
-                    <li><strong>Photos:</strong> Photos taken within the app are stored in the app's private directory and are removed upon uninstallation.</li>
-                </ul>
 
-                <h2>8. Children's Privacy</h2>
-                <p>BoxMemory is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+                <h2>9. Children's Privacy</h2>
+                <p>BoxMemory is not directed to children under the age of 13.</p>
+                <p>Because BoxMemory does not collect any user content or personal information, we do not knowingly collect personal information from children.</p>
 
-                <h2>9. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website and updating the "Last updated" date.</p>
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons.</p>
+                <p>Any changes will be reflected by updating the "Last Updated" date at the top of this policy. We encourage you to review this policy periodically.</p>
 
-                <h2>10. Contact Us</h2>
+                <h2>11. Contact Us</h2>
                 <div class="privacy-policy-contact">
-                    <p>If you have any questions, please contact us at:</p>
+                    <p>If you have any questions about this Privacy Policy, you may contact us at:</p>
                     <p><strong>Email:</strong> <a href="mailto:support@boxmemory.uk">support@boxmemory.uk</a></p>
                 </div>
             </div>
